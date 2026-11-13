@@ -1,0 +1,20 @@
+Package: sblreg
+Type: Package
+Title: Symmetric Bilinear Regression for Signal Subgraph Estimation
+Version: 0.1.0
+Authors@R: person("Sagnik", "Bhadury", role = c("aut", "cre"), email = "sagnikbhadury@users.noreply.github.com")
+Description: Regression of a scalar outcome on a network (symmetric matrix) predictor with the L1-penalised symmetric
+    bilinear model of Wang, Zhang and Dunson (2019) <doi:10.1109/TSP.2019.2899818>. Each nonzero component selects a small
+    clique of nodes whose connections relate to the outcome. Provides the coordinate-descent fit (C++), penalty paths,
+    cross-validated tuning, a nested cross-validation assessment with a permuted-outcome control, edge and node summaries,
+    and the simulation design of the paper.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports: Rcpp (>= 1.0.0), stats, utils
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/sagnikbhadury/sblreg
+BugReports: https://github.com/sagnikbhadury/sblreg/issues
+Config/roxygen2/version: 8.0.0
